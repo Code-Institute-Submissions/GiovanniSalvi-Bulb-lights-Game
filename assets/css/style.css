@@ -10,8 +10,9 @@ h1 {
     font-size:100px;
     font-weight:bold;
     font-family:"digital-clock-font";
+    letter-spacing: 0.1rem;
 }
-@import "compass/css3";
+
 h2 {
     font-size:30px;
     text-align:center;
@@ -60,6 +61,10 @@ img {
     animation:glow 3s linear infinite;
 }
 
+.bulb-on {
+    display: none!important;
+}
+
 @keyframes glow {
     0%{
         opacity: 1;
@@ -84,20 +89,24 @@ img {
  #startButton{
      font-size:40px;
      border:1px solid black;
-     border-radius:10px;
+     border-radius:20px;
      padding:6px;
      color: #f8fcff;
      background-color: #1e1e56e0;
      cursor: pointer;
      display: inline-block;
+     text-transform:uppercase;
+     letter-spacing: 0.1rem;
+     outline:none;
 }
 
  #startButton:hover{
-   background-color: white; /* Green */
+   background-color: transparent; /* Green */
    color: #403434;
    border: 1px solid black;
-   outline:none;
-   transition:  1s ease;
+   transition:  0.5s ease;
+   
+   
  }
  @media only screen and (min-width: 1024px) {
    .row {
@@ -105,9 +114,10 @@ img {
   }
 }
 
- @media only screen and (max-width: 768px) {
+ @media only screen and (max-width: 530px) {
    .row {
-      margin-right: -5px;
+    position: relative;
+    left: 10vw;
   }
 }
 
@@ -119,6 +129,12 @@ img {
   }
 }
 
+@media only screen and (max-width: 520px) {
+   #startButton {
+    position: relative;
+    left:1.4em;
+  }
+}
 
 @media only screen and (max-width: 576px) {
    .lightbox {
@@ -150,7 +166,7 @@ img {
 }
  
 @media only screen and (max-width: 576px) {
-   .bulb-on {
+   .bulb-on.bulb-off {
     height: 35%;
     width: 40%;
 }
