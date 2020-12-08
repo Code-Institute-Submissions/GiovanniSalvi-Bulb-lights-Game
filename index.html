@@ -7,22 +7,54 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
-    <link rel="stylesheet" href="style.css">
-    <title>Bulblights_Game</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Lightsbulb_Game</title>
 </head>
 <body>
-<header class=">
-  Bulb-Lights Game
+<main>
+<header> 
+<div class="container">
+ <h1>Lightbulbs  Game</h1>
+  <h2 id="one">Level 1 of 10</h2>
+  </div>
   </header>
-<div class="container">  
-  <div class="row row align-items-start">
-    <div class="col col-6 col-sm-3 bulb">1</div>  
-    <div class="col col-6 col-sm-3 bulb">2</div>  
-    <div class="col col-6 col-sm-3 bulb">3</div>  
+<section class="container">  
+  <div class="row">
+    <div class="col col-6 col-sm-3 lightbox border border-primary">
+      <img class="bulb-on" src="https://www.iconarchive.com/download/i45250/iconleak/or/light-bulb.ico" alt="bulb-on"/>
+      <img class="bulb-off" src="https://www.iconarchive.com/download/i45233/iconleak/stainless/bulb.ico" alt="bulb-off"/>
+    </div>  
+    <div class="col col-6 col-sm-3 lightbox border border-danger">
+      <img class="bulb-on" src="https://www.iconarchive.com/download/i45250/iconleak/or/light-bulb.ico" alt="bulb-on"/>
+      <img class="bulb-off" src="https://www.iconarchive.com/download/i45233/iconleak/stainless/bulb.ico" alt="bulb-off"/> 
+    </div>  
+    <div class="col col-6 col-sm-3 lightbox border border-warning">
+      <img class="bulb-on" src="https://www.iconarchive.com/download/i45250/iconleak/or/light-bulb.ico" alt="bulb-on"/> 
+      <img class="bulb-off" src="https://www.iconarchive.com/download/i45233/iconleak/stainless/bulb.ico" alt="bulb-off"/>
+    </div>  
     <div class="w-100 d-none d-md-block"></div>
-    <div class="col col-6 col-sm-3 bulb">4</div>  
-    <div class="col col-6 col-sm-3 bulb">5</div>  
-    <div class="col col-6 col-sm-3 bulb">6</div>  
+    <div class="col col-6 col-sm-3 lightbox border border-success">
+      <img class="bulb-on" src="https://www.iconarchive.com/download/i45250/iconleak/or/light-bulb.ico" alt="bulb-on"/>
+      <img class="bulb-off" src="https://www.iconarchive.com/download/i45233/iconleak/stainless/bulb.ico" alt="bulb-off"/>
+    </div>  
+    <div class="col col-6 col-sm-3 lightbox border border-dark">
+      <img class="bulb-on" src="https://www.iconarchive.com/download/i45250/iconleak/or/light-bulb.ico" alt="bulb-on"/>
+      <img class="bulb-off" src="https://www.iconarchive.com/download/i45233/iconleak/stainless/bulb.ico" alt="bulb-off"/>
+    </div>  
+    <div class="col col-6 col-sm-3 lightbox border border-info">
+      <img class="bulb-on" src="https://www.iconarchive.com/download/i45250/iconleak/or/light-bulb.ico" alt="bulb-on"/>
+      <img class="bulb-off" src="https://www.iconarchive.com/download/i45233/iconleak/stainless/bulb.ico" alt="bulb-off"/>
+    </div>  
 </div>
+</section>
+<footer>
+<h3 id="success"> Success...!!!!</h3>
+<h3 id="failed"> Game over, press wrong lightbulb...</h3>
+<div id="start_button">
+    <input type="button" value="Start" id="startButton">
+    
+</div>
+</footer>
+</main>
 </body>
 </html>
