@@ -18,7 +18,6 @@ const sectionContainer = document.querySelector(".container")
 const levelsCounter = document.querySelector(".counter")
 const endGame = document.querySelector(".success")
 const gameLost = document.querySelector(".lost")
-startButton.addEventListener('click', startGame);
 
 function startGame() {
     startButton.classList.add('hidden');
@@ -31,7 +30,41 @@ function nextTurn() {
    level += 1;
    sectionContainer.classList.add('unclickable');
    levelsCounter.textContent = `Level ${level} of 10`;
+
 }
 
+startButton.addEventListener('click', startGame);
+
+//----function activeBulb(number) {
+    //const bulb = document.querySelector(`[data-lightbox='${number}']`);
+
+   // bulb.classList.remove('bulb-on');
+
+   // setTimeout(() => {
+       // bulb.classList.add('bulb-on');
+    //}, 400);
+//}
+
+//function nextTap() {
+    //const 
+//}
 
 
+
+   //const nextSerie = [computerSerie];
+   //nextSerie.push(nextTap());
+   //playLevel(nextSerie);
+
+   //computerSerie = [nextSerie];
+   //setTimeout(() => {
+   //userTurn(level);
+  //}, level * 500 + 1000);
+//}
+
+//function playLevel(nextSerie) {
+   // nextSequence.forEach((number, index) => {
+     // setTimeout(() => {
+        //  activeBulb(number);
+      //},(index + 1)* 500);
+   // });
+//}
