@@ -13,12 +13,18 @@ h1 {
     letter-spacing: 0.1rem;
 }
 
-h2 {
-    font-size:30px;
-    text-align:center;
-    line-height:20px;
-    display:none;
-    font-family: 'digital-7';
+.hidden {
+    display: none!important;
+    text-align: center;
+    position: relative;
+    font-size: 25px;
+    top:5px;
+    letter-spacing:0.2em;
+}
+
+.counter {
+    border:2px red solid;
+    display:none!important;
 }
 
 
@@ -36,16 +42,18 @@ h3 {
     position:relative;
     
 }
+
+.unclickable {
+    pointer-events: none;
+}
 .lightbox {
-    height:250px;
+    height:220px;
     position: relative;
     left:30px;
-    top:30px;
     margin: 20px;
     cursor: pointer;
-    display: block;
-    z-index: 1;
     background: #111;
+
 }
 
 img {
@@ -56,30 +64,12 @@ img {
     position:absolute;
 }
 
-.lighbox img.bulb-on{
-    opacity: 0;
-    animation:glow 3s linear infinite;
-}
 
 .bulb-on {
-    display: none!important;
+    display: none;
 }
 
-@keyframes glow {
-    0%{
-        opacity: 1;
-    }
-    10%{
-        opacity: 1;
-    }
-    0%{
-        opacity: 1;
-    }
 
-    20%{
-        opacity: 0;
-    }
-}
 
  footer {
      text-align:center;
@@ -106,8 +96,19 @@ img {
    border: 1px solid black;
    transition:  0.5s ease;
    
-   
- }
+}
+
+.waitMode {
+    font-size:40px;
+    font-weight:normal;
+    letter-spacing:0.1rem;
+    color:gray;
+    position: relative;
+    left: 35%;
+    bottom: 40px;
+}
+
+
  @media only screen and (min-width: 1024px) {
    .row {
       margin-left: 1em;
@@ -118,13 +119,13 @@ img {
    .row {
     position: relative;
     left: 10vw;
+    row-gap: 2px;
   }
 }
 
 
 @media only screen and (max-width: 576px) {
    #start_button {
-    margin-left:2em;
     margin-top:40px;
   }
 }
@@ -140,7 +141,7 @@ img {
    .lightbox {
     margin:auto;
     position:relative;
-    height:130px;
+    height:160px;
     left:10px;
   }
 }
@@ -150,6 +151,7 @@ img {
     margin-bottom:auto;
     position: relative;
     left: 10px;
+    padding:0;
   }
 }
 
@@ -162,6 +164,13 @@ img {
    #startButton {
    font-size:35px;
    margin-top:20%;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+   #startButton {
+   position: relative;
+   bottom: 80px;
   }
 }
  
