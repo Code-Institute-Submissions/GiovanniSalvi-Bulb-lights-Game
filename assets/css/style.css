@@ -83,11 +83,13 @@ img {
 }
 
 
-.bulb-on {
-    display: none;
+/*.bulb-on {
+    display: none!important;
+}*/
+
+.border {
+    border-radius:5%;
 }
-
-
 
  footer {
      text-align:center;
