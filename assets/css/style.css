@@ -1,5 +1,5 @@
 body{
-    background-image: url();
+    background-image: url(https://user-images.githubusercontent.com/61980577/101627467-ae24a880-3a1e-11eb-9327-29ee43e95ba8.jpg);
     width:100%;
     height: 100%;
      background-position: center;
@@ -10,19 +10,22 @@ h1 {
     color: black;
     -webkit-text-fill-color: black; /*  override color  */
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-color: #e2e28ed1;
     text-align:center;
     font-size:100px;
     font-weight:bold;
     font-family:"digital-clock-font";
     letter-spacing: 0.1rem;
+    margin: 10px 50px 0px 5px;
 }
 
 .h2 {
     text-align:center;
     width:100%;
     position: relative;
-    top: 40px;
+    top: 3em;
+    right:25px;
+    color: #ff4343;
 }
 
 
@@ -66,7 +69,8 @@ h3 {
     left:30px;
     margin: 20px;
     cursor: pointer;
-    background: #111;
+    background-color:#040404bf;
+    opacity: 1;
 
 }
 
@@ -116,7 +120,7 @@ img {
     font-size:30px;
     font-weight:normal;
     letter-spacing:0.1rem;
-    color:gray;
+    color:#c9c9fd;
     display: table;
     min-width: 420px;
     margin-left: 50%;
