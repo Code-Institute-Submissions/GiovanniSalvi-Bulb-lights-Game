@@ -16,7 +16,8 @@ const startButton = document.getElementById("startButton");
 const sequenceLevel = document.querySelector(".waitMode");  //
 const sectionContainer = document.querySelector(".container")
 const levelsCounter = document.querySelector(".counter")
-
+const endGame = document.querySelector(".success")
+const gameLost = document.querySelector(".lost")
 startButton.addEventListener('click', startGame);
 
 function startGame() {
@@ -29,7 +30,7 @@ function startGame() {
 function nextTurn() {
    level += 1;
    sectionContainer.classList.add('unclickable');
-   levelsCounter.textContent = `Level ${level} of 20`;
+   levelsCounter.textContent = `Level ${level} of 10`;
 }
 
 

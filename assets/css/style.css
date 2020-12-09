@@ -83,9 +83,9 @@ img {
 }
 
 
-/*.bulb-on {
+.bulb-on {
     display: none!important;
-}*/
+}
 
 .border {
     border-radius:5%;
@@ -118,19 +118,19 @@ img {
    
 }
 
-.waitMode {
+span {
     font-size:30px;
     font-weight:normal;
     letter-spacing:0.1rem;
     color:#c9c9fd;
     display: table;
     min-width: 420px;
-    margin-left: 50%;
+    margin-left: 25%;
 }
 
 @media only screen and (max-width: 760px) {
    .waitMode {
-      margin-left:unset;
+      margin-left:50px;
   }
 }
 
