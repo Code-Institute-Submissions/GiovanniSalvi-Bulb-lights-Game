@@ -67,14 +67,11 @@ function switchLight(nextSerie) {
 
 function activateBulb(number) {
     const bulb = document.querySelector(`[data-key='${number}']`);
-    const sound = document.querySelector(`[data-sound='${number}']`);
     
-    bulb.classList.remove('bulb-on');
-
-    sound.play();    
-  
+    bulb.classList.remove('bulb-off');
     setTimeout(() => {
         bulb.classList.add('hidden');
+        
     }, 400);
 }
 
