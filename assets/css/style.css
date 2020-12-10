@@ -55,11 +55,13 @@ h3 {
     height:100%;
     margin-bottom:100px;
     position:relative;
-    
+    cursor: pointer;
 }
 
 .unclickable {
-    pointer-events: none;
+    pointer-events:none;
+    
+    
 }
 
 .lightbox {
@@ -70,7 +72,7 @@ h3 {
     cursor: pointer;
     background-color:#040404bf;
     opacity: 1;
-
+    cursor: pointer;
 }
 
 img {
@@ -143,10 +145,10 @@ span {
   }
 }
 
- @media only screen and (max-width: 530px) {
+ @media only screen and (max-width: 576px) {
    .row {
     position: relative;
-    left: 10vw;
+    left: 50px;
     row-gap: 2px;
   }
 }
@@ -177,8 +179,6 @@ span {
 @media only screen and (max-width: 576px) {
    .container {
     margin-bottom:auto;
-    position: relative;
-    left: 10px;
     padding:20px;
   }
 }

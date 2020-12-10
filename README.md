@@ -2,17 +2,21 @@
 
 # UX
 
-* LIGHTBULBS GAME
+## LIGHTBULB GAME
 
-## 
+***
 
-### 
+### Project Stories:
 
-###  
+* 
+
+*
+  
 
 
 ---
-### User stories:
+### Players Goals:
+
 * 
 
 * 
@@ -22,19 +26,18 @@
 ---
 
 ## Project's wireframes:
-![]()
+* ![Wireframe Desktop](https://user-images.githubusercontent.com/61980577/101829416-457b2000-3b33-11eb-9c01-6facc17d5a79.png)
 
-![]()
+* ![ Wireframe Ipad](https://user-images.githubusercontent.com/61980577/101829422-46ac4d00-3b33-11eb-8c93-4185bd223458.png)
 
-![]()
+* ![ Wireframe Smartphone](https://user-images.githubusercontent.com/61980577/101829427-48761080-3b33-11eb-913f-338b5199cb69.png)
 
-![]()
+* ![ Wireframe iPhone](https://user-images.githubusercontent.com/61980577/101829432-4a3fd400-3b33-11eb-9461-29dbf5f6d488.png)
 
-![]()
-
+---
 
 ## Project's Mockups screenshots:
-Home:
+
 <img >
 
 
@@ -76,11 +79,11 @@ Home:
 
 * [Bootstrap](https://getbootstrap.com/docs/4.0/layout/grid/)
 
-    * This project uses  Bootstrap 4 Grid System is used for responsive layouts.
+    * This project uses  Bootstrap 4 Grid System  for responsive layouts and Css Style.
 
-* [Fontawesome](https://fontawesome.com/)
+* []()
 
-    * This project uses Fontawesome which provides 
+    * This project uses 
 
 * []()
 
@@ -105,18 +108,20 @@ Home:
  1. As a new visitor I want navigate the site to find what I need, easily.
 
     * 
-
-    * 
+ 
 
  2. As a gamer 
 
     * 
 
+    *
+
+
   3. As an user
 
      * 
 
-     * 
+     
 
   
  ### The project has beeen designed to make pages render well on a variety of devices and window or screen sizes such as:
@@ -155,14 +160,6 @@ Home:
 <img >
  7. Surface Duo (540x720px) Responsivness tested using ChromeDev inspector tool, as shown in the screenshot below:
 <img >
-
-## Bugs discovered:
-
-### Solved bugs
-
- 1. 
-
-    * 
 
 
 ***
@@ -203,20 +200,31 @@ Home:
 ---
  ## Media
 
- ### Animations
  
- * Map icons were provided from:
-
-     [fontawesome.com](https://fontawesome.com/icons/map)
-
- 
-
  ### Images
+ 
 
- * Lightsbulb image was from:
+ * Lightsbulb images are from:
 
     * []() 
+    
+    * []()
 
+    * []()
+
+    * []()
+
+    * []()
+
+    * []()
+
+    * []()
+
+    * []()
+
+    * []()
+
+    * []()
 
 ***
 
@@ -224,4 +232,4 @@ Home:
  ## Acknowledgements
 
  * I received inspiration for this project from:
-   [This project]()
+   [Simon Game](https://en.wikipedia.org/wiki/Simon_(game))
