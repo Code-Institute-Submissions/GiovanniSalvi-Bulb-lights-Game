@@ -82,9 +82,11 @@ img {
 }
 
 
-.bulb-on {
-    display: none!important;
-}
+/*.bulb-on {
+    display:none!important;
+}*/
+
+
 
 .border {
     border-radius:5%;
