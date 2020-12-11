@@ -40,7 +40,7 @@
 
 ## Project's Mockups screenshots:
 
-* ![Project's Mockups](<img width="1277" alt="Projects Mockups" src="https://user-images.githubusercontent.com/61980577/101830405-bec74280-3b34-11eb-97d1-ead5a9b85e74.png">)
+* ![Project's Mockups](https://user-images.githubusercontent.com/61980577/101830405-bec74280-3b34-11eb-97d1-ead5a9b85e74.png)
 
 
 ---
@@ -82,13 +82,11 @@
 
     * This project uses  Bootstrap 4 Grid System  for responsive layouts and Css Style.
 
-* []()
+  []()
 
     * This project uses 
 
-* []()
-
-    * 
+  
 
 ***
 # Testing
@@ -220,13 +218,12 @@
 
     * [Bulb6](https://user-images.githubusercontent.com/61980577/101830928-86743400-3b35-11eb-8209-c468c6a161ad.png)
 
-    * [Bulb7]()(https://user-images.githubusercontent.com/61980577/101830938-88d68e00-3b35-11eb-95b9-12cfa4ecff90.png)
+    * [Bulb7](https://user-images.githubusercontent.com/61980577/101830938-88d68e00-3b35-11eb-95b9-12cfa4ecff90.png)
 
     * [Bulb8](https://user-images.githubusercontent.com/61980577/101830945-8aa05180-3b35-11eb-9280-c93d65b69f32.png)
 
     * [Bulb9](https://user-images.githubusercontent.com/61980577/101830954-90963280-3b35-11eb-94e4-4284f3aee490.png)
 
-    * []()
 
 ***
 

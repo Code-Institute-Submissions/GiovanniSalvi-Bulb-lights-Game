@@ -39,9 +39,8 @@ function startGame() {
   startButton.addEventListener('click', startGame);
   console.log('bulbContainer :' + bulbContainer);
   bulbContainer.addEventListener('click', event => {
-      const {
-          bulb
-      } = event.target.dataset;
+      const bulb
+          = event.target.dataset;
       console.log('event: ' + event +  ' dataset: ' + event.target.dataset); 
       if (bulb) manageTap(bulb);
       console.log('bulb :' + bulb);
@@ -110,17 +109,19 @@ function manageTap(bulb) {
     const remainingTaps = computerSequence.length - userSequence.length;
     ///const audio = document.querySelector(`[data-sound='${bulb}']`);
     ///sound.play();
-
+    console.log('remaining tap: ' + bulb)
     if (userSequence[index] !== computerSequence[index]) {
-        sequenceLevel.classList.remove('hidden');
+        sequenceLevel.classList.add('hidden');
         gameLost.classList.remove('hidden');
+        levelsCounter.classList.add('counter')
         resetGame();
         return;
     }
 
     if (userSequence.length === computerSequence.length) {
         if (userSequence.length === 10) {
-            sequenceLevel.classList.remove('hidden');
+            levelsCounter.classList,add('counter')
+            sequenceLevel.classList.add('hidden');
             endGame.classList.remove('hidden')
             resetGame();
             return
@@ -131,7 +132,7 @@ function manageTap(bulb) {
             userSequence = [];
             level = 0;
             startButton.classList.remove('hidden');
-            //levelsCounter.classList.add('counter');
+            levelsCounter.classList.add('counter');
             //endGame.classList.remove('hidden')
             bulbContainer.classList.add('unclickable');
         }

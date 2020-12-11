@@ -1,4 +1,4 @@
- body {
+body {
 	background-image: url(https://user-images.githubusercontent.com/61980577/101627467-ae24a880-3a1e-11eb-9327-29ee43e95ba8.jpg);
 	width: 100%;
 	height: 100%;
@@ -80,7 +80,7 @@ img {
 }
 
 .bulb-off {
-	display: none!important;      /*every bulb images are  overrided by another one*/
+	display: none!important;      /*every bulb image is  overrided by another one*/
 }
 
 .border {
@@ -195,9 +195,10 @@ span {
 			height: 35%;
 			width: 40%;
 		}
-		@media only screen and (max-width: 576px) {
+	    @media only screen and (max-width: 576px) {
 			.h2 {
 				position: unset;
 			}
 
 
+}
