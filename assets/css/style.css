@@ -25,7 +25,7 @@ h1 {
 	text-align: center;
 	width: 100%;
 	position: relative;
-	top: 3em;
+	top: 3em;            /*48px*/
 	right: 25px;
 	color: #ff4343;
 }
@@ -36,11 +36,11 @@ h1 {
 	position: relative;
 	font-size: 25px;
 	top: 5px;
-	letter-spacing: 0.2em;
+	letter-spacing: 0.2em;      /*3px*/
 }
 
 .counter {
-	display: none!important;
+	display: none!important;          /*hide levels counter when game is not active*/
 }
 
 h3 {
@@ -58,7 +58,7 @@ h3 {
 }
 
 .unclickable {
-	pointer-events: none;
+	pointer-events: none;      /*makes gamers unable to play when A.I is working*/
 }
 
 .lightbox {
@@ -80,7 +80,7 @@ img {
 }
 
 .bulb-off {
-	display: none!important;
+	display: none!important;      /*every bulb images are  overrided by another one*/
 }
 
 .border {
@@ -92,7 +92,7 @@ footer {
 	margin: 10px 5px 30px 5px;
 }
 
-#startButton {
+#startButton {                                     /*start button uses Bootstrap utilities*/
 	font-size: 40px;
 	border: 1px solid black;
 	border-radius: 20px;
@@ -102,13 +102,13 @@ footer {
 	cursor: pointer;
 	display: inline-block;
 	text-transform: uppercase;
-	letter-spacing: 0.1rem;
+	letter-spacing: 0.1rem;       /*1,6px*/
 	outline: none;
 }
 
 #startButton:hover {
 	background-color: transparent;
-	/* Green */
+	/* Red */
 	color: #403434;
 	border: 1px solid black;
 	transition: 0.5s ease;
@@ -123,7 +123,7 @@ span {
 	min-width: 420px;
 	margin-left: 25%;
 }
-
+                                                                         /*responsive layout*/
 @media only screen and (max-width: 760px) {
 	.waitMode {
 		margin-left: 50px;
