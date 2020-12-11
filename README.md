@@ -95,7 +95,7 @@ I decided to not use jQuery in order to test my abilities with javascript.
 
   ### The project has been validated using:
 
-* [validator.w3.org](https://validator.w3.org/nu/#textarea) for HTML language.
+* [validator.w3.org](https://validator.w3.org/nu/?doc=https%3A%2F%2Fgiovannisalvi.github.io%2FBulb-lights-Game%2F) for HTML language.
 
 * [jigsaw.w3.org](https://jigsaw.w3.org/css-validator/validator) for CSS language.
 
