@@ -34,19 +34,19 @@ I decided to not use jQuery in order to test my abilities with javascript.
 ---
 
 ## Project's wireframes:
-* ![Wireframe Desktop](https://user-images.githubusercontent.com/61980577/101829416-457b2000-3b33-11eb-9c01-6facc17d5a79.png)
+  ![Wireframe Desktop](https://user-images.githubusercontent.com/61980577/101829416-457b2000-3b33-11eb-9c01-6facc17d5a79.png)
 
-* ![ Wireframe Ipad](https://user-images.githubusercontent.com/61980577/101829422-46ac4d00-3b33-11eb-8c93-4185bd223458.png)
+  ![ Wireframe Ipad](https://user-images.githubusercontent.com/61980577/101829422-46ac4d00-3b33-11eb-8c93-4185bd223458.png)
 
-* ![ Wireframe Smartphone](https://user-images.githubusercontent.com/61980577/101829427-48761080-3b33-11eb-913f-338b5199cb69.png)
+  ![ Wireframe Smartphone](https://user-images.githubusercontent.com/61980577/101829427-48761080-3b33-11eb-913f-338b5199cb69.png)
 
-* ![ Wireframe iPhone](https://user-images.githubusercontent.com/61980577/101829432-4a3fd400-3b33-11eb-9461-29dbf5f6d488.png)
+  ![ Wireframe iPhone](https://user-images.githubusercontent.com/61980577/101829432-4a3fd400-3b33-11eb-9461-29dbf5f6d488.png)
 
 ---
 
 ## Project's Mockups screenshots:
 
-* ![Project's Mockups](https://user-images.githubusercontent.com/61980577/101830405-bec74280-3b34-11eb-97d1-ead5a9b85e74.png)
+  ![Project's Mockups](https://user-images.githubusercontent.com/61980577/101830405-bec74280-3b34-11eb-97d1-ead5a9b85e74.png)
 
 
 ---
@@ -105,11 +105,11 @@ I decided to not use jQuery in order to test my abilities with javascript.
 
 * The quality of the website was measured using Google Lighthouse:
 
-• ![Chrome Lighthouse Tool](<img width="1062" alt="Lighthouse chroome" src="https://user-images.githubusercontent.com/61980577/101937708-83834d00-3be2-11eb-8826-1352d8d71e74.png">)
+  [Chrome Lighthouse Tool](<img width="1062" alt="Lighthouse chroome" src="https://user-images.githubusercontent.com/61980577/101937708-83834d00-3be2-11eb-8826-1352d8d71e74.png">)
 
 * The code of the website was formatted using:
 
-• [Freeformatter.com](https://www.freeformatter.com/)
+  [Freeformatter.com](https://www.freeformatter.com/)
 
 ***
   
