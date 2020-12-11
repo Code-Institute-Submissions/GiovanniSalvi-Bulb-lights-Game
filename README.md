@@ -105,7 +105,8 @@ I decided to not use jQuery in order to test my abilities with javascript.
 
 * The quality of the website was measured using Google Lighthouse:
 
-  [Chrome Lighthouse Tool](<img width="1062" alt="Lighthouse chroome" src="https://user-images.githubusercontent.com/61980577/101937708-83834d00-3be2-11eb-8826-1352d8d71e74.png">)
+  [Chrome Lighthouse Tool]
+  <img width="1062" alt="Lighthouse chroome" src="https://user-images.githubusercontent.com/61980577/101937708-83834d00-3be2-11eb-8826-1352d8d71e74.png">
 
 * The code of the website was formatted using:
 
