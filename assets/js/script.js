@@ -23,6 +23,7 @@ function startGame() {
     startButton.classList.add('hidden');
     sequenceLevel.classList.remove('hidden');
     levelsCounter.classList.remove('counter');
+    gameLost.classList.add('hidden');
     nextTurn();
 }
 
@@ -39,8 +40,7 @@ function startGame() {
   startButton.addEventListener('click', startGame);
   console.log('bulbContainer :' + bulbContainer);
   bulbContainer.addEventListener('click', event => {
-      const bulb
-          = event.target.dataset;
+      var bulb = event.target.dataset;
       console.log('event: ' + event +  ' dataset: ' + event.target.dataset); 
       if (bulb) manageTap(bulb);
       console.log('bulb :' + bulb);
@@ -56,20 +56,20 @@ function nextTurn() {
     levelsCounter.textContent = `Level ${level} of 10`;
 
 
-    const nextSerie = [...computerSequence];
+    var nextSerie = [...computerSequence];
     nextSerie.push(chooseRandomBulb());
     switchLight(nextSerie);
 
     computerSequence = [...nextSerie];
-    const timeoutInstance = setTimeout(() => {
+    var timeoutInstance = setTimeout(() => {
         userTurn(level);
         clearTimeout(timeoutInstance);
-    }, level * 800 + 1000);
+    }, level * 600 + 1000);
 }
 
 function chooseRandomBulb() {
-    const bulbs = ['one', 'two', 'three', 'four', 'five', 'six'];
-    const random = bulbs[Math.floor(Math.random() * bulbs.length)];
+    var bulbs = ['one', 'two', 'three', 'four', 'five', 'six'];
+    var random = bulbs[Math.floor(Math.random() * bulbs.length)];
     return random;
 }
 
@@ -78,37 +78,31 @@ function switchLight(nextSerie) {
         var timeoutInstance = setTimeout(() => {
             activateBulb(number);
             clearTimeout(timeoutInstance);
-        }, (index + 1) * 600);
+        }, (index + 1) * 700);
     });
 }
 
 function activateBulb(number) {
-    const bulb = document.querySelector(`[data-lightbox='${number}']`);
-    //const audio = document.querySelector(`[data-sound='${number}']`);
-    //sound.play();
+    var bulb = document.querySelector(`[data-lightbox='${number}']`);
 
     bulb.classList.remove('bulb-off');
-    const timeoutInstance = setTimeout(() => {
+    var timeoutInstance = setTimeout(() => {
         bulb.classList.add('hidden');
         clearTimeout(timeoutInstance);
-    }, 400);
+    }, 200);
 }
 
 function userTurn(level) {
-      bulbContainer.classList.remove('unclickable');
-    //bulbContainer.forEach(item => {
-    //item.classList.remove('unclickable')
-      //})
+    bulbContainer.classList.remove('unclickable');
+    
     sequenceLevel.textContent = `Your turn: ${level} Tap`;
     console.log('user turn level :' + level)
 }
 
 function manageTap(bulb) {
-    const index = userSequence.push(bulb) - 1;
-
-    const remainingTaps = computerSequence.length - userSequence.length;
-    ///const audio = document.querySelector(`[data-sound='${bulb}']`);
-    ///sound.play();
+    var index = userSequence.push(bulb) - 1;
+    var remainingTaps = computerSequence.length - userSequence.length;
+    
     console.log('remaining tap: ' + bulb)
     if (userSequence[index] !== computerSequence[index]) {
         sequenceLevel.classList.add('hidden');
@@ -127,16 +121,6 @@ function manageTap(bulb) {
             return
         }
 
-        function resetGame() {
-            computerSequence = [];
-            userSequence = [];
-            level = 0;
-            startButton.classList.remove('hidden');
-            levelsCounter.classList.add('counter');
-            //endGame.classList.remove('hidden')
-            bulbContainer.classList.add('unclickable');
-        }
-
         userSequence = [];
         sequenceLevel.textContent = 'Well Done!';
         var timeoutInstance = setTimeout(() => {
@@ -144,10 +128,21 @@ function manageTap(bulb) {
             clearTimeout(timeoutInstance);
         }, 1000);
         return;
+        //console.log('Well done :' + userSequence);
     }
 
     sequenceLevel.textContent = `Your turn: ${remainingTaps} Tap${
 remainingTaps
 }`;
 }
+
+        function resetGame() {
+            computerSequence = [];
+            userSequence = [];
+            level = 0;
+            startButton.classList.remove('hidden');
+            levelsCounter.classList.add('counter');
+            endGame.classList.add('hidden')
+            bulbContainer.classList.add('unclickable');
+        }
 

@@ -21,11 +21,12 @@ h1 {
 	margin: 10px 50px 0px 5px;
 }
 
-.h2 {
+.level-info {
 	text-align: center;
 	width: 100%;
 	position: relative;
-	top: 3em;            /*48px*/
+	top: 3em;
+	/*48px*/
 	right: 25px;
 	color: #ff4343;
 }
@@ -36,11 +37,13 @@ h1 {
 	position: relative;
 	font-size: 25px;
 	top: 5px;
-	letter-spacing: 0.2em;      /*3px*/
+	letter-spacing: 0.2em;
+	/*3px*/
 }
 
 .counter {
-	display: none!important;          /*hide levels counter when game is not active*/
+	display: none!important;
+	/*hide levels counter when game is not active*/
 }
 
 h3 {
@@ -58,7 +61,8 @@ h3 {
 }
 
 .unclickable {
-	pointer-events: none;      /*makes gamers unable to play when A.I is working*/
+	pointer-events: none;
+	/*makes gamers unable to play when A.I is working*/
 }
 
 .lightbox {
@@ -80,7 +84,8 @@ img {
 }
 
 .bulb-off {
-	display: none!important;      /*every bulb image is  overrided by another one*/
+	display: none!important;
+	/*every bulb image is  overrided by another one*/
 }
 
 .border {
@@ -92,7 +97,8 @@ footer {
 	margin: 10px 5px 30px 5px;
 }
 
-#startButton {                                     /*start button uses Bootstrap utilities*/
+#startButton {
+	/*start button uses Bootstrap utilities*/
 	font-size: 40px;
 	border: 1px solid black;
 	border-radius: 20px;
@@ -102,7 +108,8 @@ footer {
 	cursor: pointer;
 	display: inline-block;
 	text-transform: uppercase;
-	letter-spacing: 0.1rem;       /*1,6px*/
+	letter-spacing: 0.1rem;
+	/*1,6px*/
 	outline: none;
 }
 
@@ -123,7 +130,10 @@ span {
 	min-width: 420px;
 	margin-left: 25%;
 }
-                                                                         /*responsive layout*/
+
+
+/*responsive layout*/
+
 @media only screen and (max-width: 760px) {
 	.waitMode {
 		margin-left: 50px;
@@ -178,27 +188,31 @@ span {
 		position: relative;
 		left: 50px;
 	}
-	@media only screen and (max-width: 576px) {
-		#startButton {
-			font-size: 35px;
-			margin-top: 20%;
-		}
-	}
-	@media only screen and (min-width: 576px) {
-		#startButton {
-			position: relative;
-			bottom: 80px;
-		}
-	}
-	@media only screen and (max-width: 576px) {
-		.bulb-on.bulb-off {
-			height: 35%;
-			width: 40%;
-		}
-	    @media only screen and (max-width: 576px) {
-			.h2 {
-				position: unset;
-			}
+}
 
+@media only screen and (max-width: 576px) {
+	#startButton {
+		font-size: 35px;
+		margin-top: 20%;
+	}
+}
 
+@media only screen and (min-width: 576px) {
+	#startButton {
+		position: relative;
+		bottom: 80px;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	.bulb-on.bulb-off {
+		height: 35%;
+		width: 40%;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	.h2 {
+		position: unset;
+	}
 }

@@ -4,26 +4,32 @@
 
 ## LIGHTBULB GAME
 
+I realized this project as part of the Interactive Front-end development module that I am completing at "code academy" training course.
+
 ***
 
-### Project Stories:
+### Project Story:
 
-* 
-
-*
-
-* 
-
-*
+For this project I decided to do a  game inspired by Simon game. It is a memory game where you have to follow the sequence and copy the sequence correctly to move on to the next level after completing 10 levels you have won otherwise you have lost.
+Firstly I realized  the HTML for the game and using bootstrap libraries to make page responsive then after I finished to style it with css.
+Once I completed the static part of the game I create the script using javascript, first step was create three variables 'LET' to assign the empty arrays human sequence, A.I sequence and  starting point level[0].
+Then I create an event listener to the bulbContainer const. which  element that  clicked is accessed and stored in the bulb variable.
+My goal was also add a specific audio to each lightbulbs and create a reset button but i gave up to focus on making the game functional.
+I decided to not use jQuery in order to test my abilities with javascript.
 
 ---
+
 ### Players Goals:
 
-* 
+1. A challenging game to play.
 
-* 
+2. In this project the lights flash and the user has to copy the sequence and click the correct bulb. 
 
-* 
+3. Users in order to win are supposed to reach level 10.
+
+4. The game gets harder the longer you play!
+
+
 
 ---
 
@@ -49,21 +55,23 @@
 
 ## Existing featers:
 
-* Feature1: 
+* Feature1:All game controls are displayed in a intuitive way.
 
-* Feature2: 
+* Feature2:It has a counter so the user knows what level they are on throughout the game.
 
-* Feature3: 
+* Feature3:When game ends an info message users will be notified either they have won or lost.
 
-* Feature4: 
+* Feature4:I have used a random function which will allow the game to use a unique sequence each time.
 
-* Feature5: 
+* Feature5:If users press the wrong button, they are notified to have done so.
 
-* Feature6: 
+* Feature6:.Fun  bulbs images and a suitable background image.
 
 ## features left to implement
 
-*  
+* Feature1:A feature to implement is create a 'reset' buttons to let the users have control of the game.
+
+* Feature2:A feature to implement is  add background music to the game, add a new sound object, and start playing when users start the game.
 
 ---
 # Technologies used
@@ -82,46 +90,28 @@
 
     * This project uses  Bootstrap 4 Grid System  for responsive layouts and Css Style.
 
-  []()
-
-    * This project uses 
-
-  
-
 ***
 # Testing
 
   ### The project has been validated using:
 
-* [validator.w3.org]() for HTML language.
+* [validator.w3.org](https://validator.w3.org/nu/#textarea) for HTML language.
 
-* [jigsaw.w3.org]() for CSS language.
+* [jigsaw.w3.org](https://jigsaw.w3.org/css-validator/validator) for CSS language.
 
-* [jshint.com] () for JAVASCRIPT language
+* [jshint.com]() for JAVASCRIPT language
 
-* The quality of the web-site was measured using Google Lighthouse:
-  
+---
 
-### Testing client stories from UX section of README.md file:
+* The quality of the website was measured using Google Lighthouse:
 
- 1. As a new visitor I want navigate the site to find what I need, easily.
+• ![Chrome Lighthouse Tool](<img width="1062" alt="Lighthouse chroome" src="https://user-images.githubusercontent.com/61980577/101937708-83834d00-3be2-11eb-8826-1352d8d71e74.png">)
 
-    * 
- 
+* The code of the website was formatted using:
 
- 2. As a gamer 
+• [Freeformatter.com](https://www.freeformatter.com/)
 
-    * 
-
-    *
-
-
-  3. As an user
-
-     * 
-
-     
-
+***
   
  ### The project has beeen designed to make pages render well on a variety of devices and window or screen sizes such as:
 
