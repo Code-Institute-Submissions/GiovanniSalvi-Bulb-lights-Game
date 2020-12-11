@@ -11,8 +11,10 @@
 * 
 
 *
-  
 
+* 
+
+*
 
 ---
 ### Players Goals:
@@ -38,7 +40,7 @@
 
 ## Project's Mockups screenshots:
 
-<img >
+* ![Project's Mockups](<img width="1277" alt="Projects Mockups" src="https://user-images.githubusercontent.com/61980577/101830405-bec74280-3b34-11eb-97d1-ead5a9b85e74.png">)
 
 
 ---
@@ -61,8 +63,7 @@
 
 ## features left to implement
 
-* 
-* 
+*  
 
 ---
 # Technologies used
@@ -101,7 +102,7 @@
 * [jshint.com] () for JAVASCRIPT language
 
 * The quality of the web-site was measured using Google Lighthouse:
-  <img >
+  
 
 ### Testing client stories from UX section of README.md file:
 
@@ -126,40 +127,38 @@
   
  ### The project has beeen designed to make pages render well on a variety of devices and window or screen sizes such as:
 
- * Desktop: (1600x992px) Responsivness tested using ChromeDev inspector tool, as shown in the screenshot below:
-<img >
+ * Desktop: (1600x992px) Responsivness tested using ChromeDev inspector tool.
 
- * Laptop: (1280x802px) Responsivness tested using ChromeDev inspector tool, as shown in the screenshot below:
-<img >
+
+ * Laptop: (1280x802px) Responsivness tested using ChromeDev inspector tool.
+
 
  * Tablet
- 1. ipad Pro: (1024x1366px) Responsivness tested using ChromeDev inspector tool, as shown in the screenshot below:
- <img >
+ 1. ipad Pro: (1024x1366px) Responsivness tested using ChromeDev inspector tool.
+ 
 
- 2. iPad: (768x1024px) Responsivness tested using ChromeDev inspector tool, as shown in the screenshot below:
-<img >
+ 2. iPad: (768x1024px) Responsivness tested using ChromeDev inspector tool.
+
 
 * Mobile
- 1. Moto G4 (360x640px) Responsivness tested using ChromeDev inspector tool, as shown in the screenshot below:
- <img >
+ 1. Moto G4 (360x640px) Responsivness tested using ChromeDev inspector tool.
+ 
 
- 2. Galaxy S5 (360x640px) Responsivness tested using ChromeDev inspector tool, as shown in the screenshot below:
- <img >
+ 2. Galaxy S5 (360x640px) Responsivness tested using ChromeDev inspector tool.
+ 
 
- 2. Pixel 2 (411x731px) Responsivness tested using ChromeDev inspector tool, as shown in the screenshot below:
- <img >
+ 2. Pixel 2 (411x731px) Responsivness tested using ChromeDev inspector tool,.
+ 
 
- 3. Pixel 2 XL (411x823px) Responsivness tested using ChromeDev inspector tool, as shown in the screenshot below:
- <img >
+ 3. Pixel 2 XL (411x823px) Responsivness tested using ChromeDev inspector tool.
+ 
 
- 4. Iphone 6/7/8 (375x677px) Responsivness tested using ChromeDev inspector tool, as shown in the screenshot below:
- <img >
- 5. Iphone 6/7/8 Plus (414x736px) Responsivness tested using ChromeDev inspector tool, as shown in the screenshot below:
- <img >
- 6. Iphone X (375x812px) Responsivness tested using ChromeDev inspector tool, as shown in the screenshot below:
-<img >
- 7. Surface Duo (540x720px) Responsivness tested using ChromeDev inspector tool, as shown in the screenshot below:
-<img >
+ 4. Iphone 6/7/8 (375x677px) Responsivness tested using ChromeDev inspector tool.
+
+ 
+ 5. Iphone 6/7/8 Plus (414x736px) Responsivness tested using ChromeDev inspector tool.
+ 
+ 
 
 
 ***
@@ -203,26 +202,29 @@
  
  ### Images
  
+ * Background Image :
 
- * Lightsbulb images are from:
+    * [Background Image](https://user-images.githubusercontent.com/61980577/101831674-8a548600-3b36-11eb-8457-af7aa4804695.jpg)
 
-    * []() 
+ * Lightsbulb Images :
+
+    * [Bulb1](https://user-images.githubusercontent.com/61980577/101830813-5af14980-3b35-11eb-8d7d-dae9c80ed92d.png) 
     
-    * []()
+    * [Bulb2](https://user-images.githubusercontent.com/61980577/101830904-7fe5bc80-3b35-11eb-8a3d-1c5a08576688.png)
 
-    * []()
+    * [Bulb3](https://user-images.githubusercontent.com/61980577/101830911-82e0ad00-3b35-11eb-817b-0b13141b3418.png)
 
-    * []()
+    * [Bulb4](https://user-images.githubusercontent.com/61980577/101830917-8411da00-3b35-11eb-85ad-c4d705bb4cb0.png)
 
-    * []()
+    * [Bulb5](https://user-images.githubusercontent.com/61980577/101830924-85430700-3b35-11eb-8c6e-dd9efbc36866.png)
 
-    * []()
+    * [Bulb6](https://user-images.githubusercontent.com/61980577/101830928-86743400-3b35-11eb-8209-c468c6a161ad.png)
 
-    * []()
+    * [Bulb7]()(https://user-images.githubusercontent.com/61980577/101830938-88d68e00-3b35-11eb-95b9-12cfa4ecff90.png)
 
-    * []()
+    * [Bulb8](https://user-images.githubusercontent.com/61980577/101830945-8aa05180-3b35-11eb-9280-c93d65b69f32.png)
 
-    * []()
+    * [Bulb9](https://user-images.githubusercontent.com/61980577/101830954-90963280-3b35-11eb-94e4-4284f3aee490.png)
 
     * []()
 

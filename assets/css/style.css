@@ -1,213 +1,203 @@
-body{
-    background-image: url(https://user-images.githubusercontent.com/61980577/101627467-ae24a880-3a1e-11eb-9327-29ee43e95ba8.jpg);
-    width:100%;
-    height: 100%;
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
+ body {
+	background-image: url(https://user-images.githubusercontent.com/61980577/101627467-ae24a880-3a1e-11eb-9327-29ee43e95ba8.jpg);
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
+
 h1 {
-    color: black;
-    -webkit-text-fill-color: black; /*  override color  */
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #e2e28ed1;
-    text-align:center;
-    font-size:100px;
-    font-weight:bold;
-    font-family:"digital-clock-font";
-    letter-spacing: 0.1rem;
-    margin: 10px 50px 0px 5px;
+	color: black;
+	-webkit-text-fill-color: black;
+	/*  override color  */
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: #e2e28ed1;
+	text-align: center;
+	font-size: 100px;
+	font-weight: bold;
+	font-family: "digital-clock-font";
+	letter-spacing: 0.1rem;
+	margin: 10px 50px 0px 5px;
 }
 
 .h2 {
-    text-align:center;
-    width:100%;
-    position: relative;
-    top: 3em;
-    right:25px;
-    color: #ff4343;
+	text-align: center;
+	width: 100%;
+	position: relative;
+	top: 3em;
+	right: 25px;
+	color: #ff4343;
 }
 
-
 .hidden {
-    display: none!important;
-    text-align: center;
-    position: relative;
-    font-size: 25px;
-    top:5px;
-    letter-spacing:0.2em;
+	display: none!important;
+	text-align: center;
+	position: relative;
+	font-size: 25px;
+	top: 5px;
+	letter-spacing: 0.2em;
 }
 
 .counter {
-    display:none!important;
+	display: none!important;
 }
-
-
-
 
 h3 {
-    font-size:25px;
-    display:none;
-    font-family: 'digital-7';
+	font-size: 25px;
+	display: none;
+	font-family: 'digital-7';
 }
-.container {  
-    display: grid;  
-    height:100%;
-    margin-bottom:100px;
-    position:relative;
-    cursor: pointer;
+
+.container {
+	display: grid;
+	height: 100%;
+	margin-bottom: 100px;
+	position: relative;
+	cursor: pointer;
 }
 
 .unclickable {
-    pointer-events:none;
-    
-    
+	pointer-events: none;
 }
 
 .lightbox {
-    height:220px;
-    position: relative;
-    left:30px;
-    margin: 20px;
-    cursor: pointer;
-    background-color:#040404bf;
-    opacity: 1;
-    cursor: pointer;
+	height: 220px;
+	position: relative;
+	left: 30px;
+	margin: 20px;
+	cursor: pointer;
+	background-color: #040404bf;
+	opacity: 1;
 }
 
 img {
-    margin:5px -14px;
-    padding: 10px;
-    height: 100%;
-    width: 100%;
-    position:absolute;
+	margin: 5px -14px;
+	padding: 10px;
+	height: 100%;
+	width: 100%;
+	position: absolute;
 }
-
 
 .bulb-off {
-    display:none!important;
+	display: none!important;
 }
-
-
 
 .border {
-    border-radius:5%;
+	border-radius: 5%;
 }
 
- footer {
-     text-align:center;
-     margin: 10px 5px 30px 5px;
- }
-
- #startButton{
-     font-size:40px;
-     border:1px solid black;
-     border-radius:20px;
-     padding:6px;
-     color: #f8fcff;
-     background-color: #1e1e56e0;
-     cursor: pointer;
-     display: inline-block;
-     text-transform:uppercase;
-     letter-spacing: 0.1rem;
-     outline:none;
+footer {
+	text-align: center;
+	margin: 10px 5px 30px 5px;
 }
 
- #startButton:hover{
-   background-color: transparent; /* Green */
-   color: #403434;
-   border: 1px solid black;
-   transition:  0.5s ease;
-   
+#startButton {
+	font-size: 40px;
+	border: 1px solid black;
+	border-radius: 20px;
+	padding: 6px;
+	color: #f8fcff;
+	background-color: #1e1e56e0;
+	cursor: pointer;
+	display: inline-block;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	outline: none;
+}
+
+#startButton:hover {
+	background-color: transparent;
+	/* Green */
+	color: #403434;
+	border: 1px solid black;
+	transition: 0.5s ease;
 }
 
 span {
-    font-size:30px;
-    font-weight:normal;
-    letter-spacing:0.1rem;
-    color:#c9c9fd;
-    display: table;
-    min-width: 420px;
-    margin-left: 25%;
+	font-size: 30px;
+	font-weight: normal;
+	letter-spacing: 0.1rem;
+	color: #c9c9fd;
+	display: table;
+	min-width: 420px;
+	margin-left: 25%;
 }
 
 @media only screen and (max-width: 760px) {
-   .waitMode {
-      margin-left:50px;
-  }
+	.waitMode {
+		margin-left: 50px;
+	}
 }
 
-
-
- @media only screen and (min-width: 1024px) {
-   .row {
-      margin-left: 1em;
-  }
+@media only screen and (min-width: 1024px) {
+	.row {
+		margin-left: 1em;
+	}
 }
-
- @media only screen and (max-width: 576px) {
-   .row {
-    position: relative;
-    left: 50px;
-    row-gap: 2px;
-  }
-}
-
 
 @media only screen and (max-width: 576px) {
-   #start_button {
-    margin-top:40px;
-  }
+	.row {
+		position: relative;
+		left: 50px;
+		row-gap: 2px;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	#start_button {
+		margin-top: 40px;
+	}
 }
 
 @media only screen and (max-width: 520px) {
-   #startButton {
-    position: relative;
-    left:1.4em;
-  }
+	#startButton {
+		position: relative;
+		left: 1.4em;
+	}
 }
 
 @media only screen and (max-width: 576px) {
-   .lightbox {
-    margin:auto;
-    position:relative;
-    height:160px;
-    left:10px;
-  }
+	.lightbox {
+		margin: auto;
+		position: relative;
+		height: 160px;
+		left: 10px;
+	}
 }
 
 @media only screen and (max-width: 576px) {
-   .container {
-    margin-bottom:auto;
-    padding:20px;
-  }
+	.container {
+		margin-bottom: auto;
+		padding: 20px;
+	}
 }
 
 @media only screen and (min-width: 1026px) {
-   .container {
-   position: relative;
-   left: 50px;
-  }
-@media only screen and (max-width: 576px) {
-   #startButton {
-   font-size:35px;
-   margin-top:20%;
-  }
-}
+	.container {
+		position: relative;
+		left: 50px;
+	}
+	@media only screen and (max-width: 576px) {
+		#startButton {
+			font-size: 35px;
+			margin-top: 20%;
+		}
+	}
+	@media only screen and (min-width: 576px) {
+		#startButton {
+			position: relative;
+			bottom: 80px;
+		}
+	}
+	@media only screen and (max-width: 576px) {
+		.bulb-on.bulb-off {
+			height: 35%;
+			width: 40%;
+		}
+		@media only screen and (max-width: 576px) {
+			.h2 {
+				position: unset;
+			}
 
-@media only screen and (min-width: 576px) {
-   #startButton {
-   position: relative;
-   bottom: 80px;
-  }
-}
- 
-@media only screen and (max-width: 576px) {
-   .bulb-on.bulb-off {
-    height: 35%;
-    width: 40%;
-}
-@media only screen and (max-width: 576px) {
-    .h2 {
-    position:unset;
-}
+
