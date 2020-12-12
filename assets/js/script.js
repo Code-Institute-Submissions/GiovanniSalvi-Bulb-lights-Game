@@ -1,18 +1,18 @@
 let computerSequence = [];
-let userSequence = [];
+let userSequence = [];                                  //global variabiles called//
 let level = 0;
 
 const startButton = document.getElementById("startButton");
 const sequenceLevel = document.querySelector(".waitmode");
-const bulbContainer = document.getElementById("handleclick");
-const levelsCounter = document.querySelector(".counter");
+const bulbContainer = document.getElementById("handleclick");          
+const levelsCounter = document.querySelector(".counter");              //local variabiles//
 const endGame = document.querySelector(".success");
 const gameLost = document.querySelector(".lost");
 
 function startGame() {
     startButton.classList.add('hidden');
     sequenceLevel.classList.remove('hidden');
-    levelsCounter.classList.remove('counter');
+    levelsCounter.classList.remove('counter');                   
     gameLost.classList.add('hidden');
     nextTurn();
 }
@@ -20,9 +20,9 @@ function startGame() {
 
 startButton.addEventListener('click', startGame);
 bulbContainer.addEventListener('click', event => {
-    var bulb = event.target.dataset; //user turn level :1
-    //  event: [object MouseEvent] dataset: [object: DOMStringMap]
-    //  this bug might make the game not working//  // "user sequence not a number"
+    var bulb = event.target.dataset;                             //user turn level :1
+                                                                //  event: [object MouseEvent] dataset: [object: DOMStringMap]
+                                                                //  this bug might make the game not working//  // "user sequence not a number"
     if (bulb) manageTap(bulb);
 
 });
@@ -83,9 +83,9 @@ function manageTap(bulb) {
     var remainingTaps = computerSequence.length - userSequence.length;
 
 
-    if (userSequence[index] !== computerSequence[index]) {
+    if (userSequence[index] !== computerSequence[index]) {                 
         sequenceLevel.classList.add('hidden');
-        gameLost.classList.remove('hidden');
+        gameLost.classList.remove('hidden');                    
         levelsCounter.classList.add('counter')
         resetGame();
         return;
