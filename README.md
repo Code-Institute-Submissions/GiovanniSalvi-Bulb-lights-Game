@@ -114,7 +114,7 @@ I decided to not use jQuery in order to test my abilities with javascript.
   
  * The Javascript code was formatted using:
  
- [Online JavaScript Beautifier](https://beautifier.io/)
+  [Online JavaScript Beautifier](https://beautifier.io/)
 
 ***
   
