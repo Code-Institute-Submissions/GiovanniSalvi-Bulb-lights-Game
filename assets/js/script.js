@@ -1,13 +1,15 @@
 let computerSequence = [];
-let userSequence = [];                                  //global variabiles called//
+let userSequence = [];                                  
 let level = 0;
 
 const startButton = document.getElementById("startButton");
 const sequenceLevel = document.querySelector(".waitmode");
 const bulbContainer = document.getElementById("handleclick");          
-const levelsCounter = document.querySelector(".counter");              //local variabiles//
+const levelsCounter = document.querySelector(".counter");              
 const endGame = document.querySelector(".success");
 const gameLost = document.querySelector(".lost");
+
+//global variabiles called//
 
 function startGame() {
     startButton.classList.add('hidden');
