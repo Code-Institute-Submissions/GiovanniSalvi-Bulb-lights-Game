@@ -4,7 +4,7 @@
 
 ## LIGHTBULB GAME
 
-I realized this project as part of the Interactive Front-end development module that I am completing at "code academy" training course.
+I realized this project as part of the Interactive Front-end development module that I am completing at "code institute" training course.
 
 ***
 

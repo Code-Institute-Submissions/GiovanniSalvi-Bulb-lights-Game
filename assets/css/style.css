@@ -38,7 +38,7 @@ h1 {
 	font-size: 25px;
 	top: 5px;
 	letter-spacing: 0.2em;
-	/*3px*/
+	
 }
 
 .counter {
@@ -83,10 +83,11 @@ img {
 	position: absolute;
 }
 
-.bulb-off {
-	display: none!important;
-	/*every bulb image is  overrided by another one*/
+/*.bulb-off {
+    display: none!important;
 }
+	/*every bulb image is  overrided by another one*/
+
 
 .border {
 	border-radius: 5%;

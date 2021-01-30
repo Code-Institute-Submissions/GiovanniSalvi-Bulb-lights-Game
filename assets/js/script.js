@@ -12,6 +12,7 @@ const gameLost = document.querySelector(".lost");
 //global variabiles called//
 
 function startGame() {
+     console.log("start game - game has started")
     startButton.classList.add('hidden');
     sequenceLevel.classList.remove('hidden');
     levelsCounter.classList.remove('counter');                   
@@ -22,7 +23,8 @@ function startGame() {
 
 startButton.addEventListener('click', startGame);
 bulbContainer.addEventListener('click', event => {
-    var bulb = event.target.dataset;                             //user turn level :1
+    var bulb = event.target.dataset.number; 
+    console.log("bulbContainer - bulb: " + bulb)                                                           //user turn                                                                   level :1
                                                                 //  event: [object MouseEvent] dataset: [object: DOMStringMap]
                                                                 //  this bug might make the game not working//  // "user sequence not a number"
     if (bulb) manageTap(bulb);
@@ -32,6 +34,7 @@ bulbContainer.addEventListener('click', event => {
 
 function nextTurn() {
     level += 1;
+    console.log("next turn - level: " + level)
     bulbContainer.classList.add('unclickable');
 
     levelsCounter.textContent = `Level ${level} of 10`;
@@ -39,9 +42,11 @@ function nextTurn() {
 
     var nextSerie = [...computerSequence];
     nextSerie.push(chooseRandomBulb());
+    console.log("next turn - nextSerie is : " + nextSerie)
     switchLight(nextSerie);
 
     computerSequence = [...nextSerie];
+    console.log("next turn - computerSequence is: " + computerSequence)
     var timeoutInstance = setTimeout(() => {
         userTurn(level);
         clearTimeout(timeoutInstance);
@@ -51,6 +56,7 @@ function nextTurn() {
 function chooseRandomBulb() {
     var bulbs = ['one', 'two', 'three', 'four', 'five', 'six'];
     var random = bulbs[Math.floor(Math.random() * bulbs.length)];
+    console.log("chooseRandomBulb - random value : " + random)
     return random;
 }
 
@@ -58,30 +64,34 @@ function switchLight(nextSerie) {
     nextSerie.forEach((number, index) => {
         var timeoutInstance = setTimeout(() => {
             activateBulb(number);
+            console.log("switchLight - activeBulb : " + number)
             clearTimeout(timeoutInstance);
         }, (index + 1) * 700);
     });
 }
 
 function activateBulb(number) {
-    var bulb = document.querySelector(`[data-lightbox='${number}']`);
-
-    bulb.classList.remove('bulb-off');
+    var bulb = document.querySelector(`[data-number='${number}']`);
+        bulb.classList.add('hidden')
+    //bulb.classList.remove('bulb-off');//
     var timeoutInstance = setTimeout(() => {
-        bulb.classList.add('hidden');
+        bulb.classList.remove('hidden');
+        //bulb.classList.add('bulb-off');
         clearTimeout(timeoutInstance);
-    }, 200);
+    }, 1000);
 }
 
 function userTurn(level) {
     bulbContainer.classList.remove('unclickable');
-
+    console.log("userTurn - userlevel: " + level)
     sequenceLevel.textContent = `Your turn: ${level} Tap`;
 
 }
 
 function manageTap(bulb) {
+    console.log("managetap - bulb is equal to: " + bulb)
     var index = userSequence.push(bulb) - 1;
+    console.log("managetap - index is : " + index)
     var remainingTaps = computerSequence.length - userSequence.length;
 
 
