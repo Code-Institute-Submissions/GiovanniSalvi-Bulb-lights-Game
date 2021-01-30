@@ -36,7 +36,7 @@ function nextTurn() {
     level += 1;
     console.log("next turn - level: " + level)
     bulbContainer.classList.add('unclickable');
-
+    sequenceLevel.classList.remove('hidden');
     levelsCounter.textContent = `Level ${level} of 10`;
 
 
@@ -122,7 +122,7 @@ function manageTap(bulb) {
 
     }
 
-    sequenceLevel.textContent = `Your turn: ${remainingTaps} Tap${
+    sequenceLevel.textContent = `Your turn: Tap${
 remainingTaps
 }`;
 }
