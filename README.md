@@ -202,22 +202,16 @@ I decided to not use jQuery in order to test my abilities with javascript.
  * Lightsbulb Images :
 
     * [Bulb1](https://user-images.githubusercontent.com/61980577/101830813-5af14980-3b35-11eb-8d7d-dae9c80ed92d.png) 
-    
-    * [Bulb2](https://user-images.githubusercontent.com/61980577/101830904-7fe5bc80-3b35-11eb-8a3d-1c5a08576688.png)
 
-    * [Bulb3](https://user-images.githubusercontent.com/61980577/101830911-82e0ad00-3b35-11eb-817b-0b13141b3418.png)
+    * [Bulb2](https://user-images.githubusercontent.com/61980577/101830911-82e0ad00-3b35-11eb-817b-0b13141b3418.png)
 
-    * [Bulb4](https://user-images.githubusercontent.com/61980577/101830917-8411da00-3b35-11eb-85ad-c4d705bb4cb0.png)
+    * [Bulb3](https://user-images.githubusercontent.com/61980577/101830917-8411da00-3b35-11eb-85ad-c4d705bb4cb0.png)
 
-    * [Bulb5](https://user-images.githubusercontent.com/61980577/101830924-85430700-3b35-11eb-8c6e-dd9efbc36866.png)
+    * [Bulb4](https://user-images.githubusercontent.com/61980577/101830924-85430700-3b35-11eb-8c6e-dd9efbc36866.png)
 
-    * [Bulb6](https://user-images.githubusercontent.com/61980577/101830928-86743400-3b35-11eb-8209-c468c6a161ad.png)
+    * [Bulb5](https://user-images.githubusercontent.com/61980577/101830938-88d68e00-3b35-11eb-95b9-12cfa4ecff90.png)
 
-    * [Bulb7](https://user-images.githubusercontent.com/61980577/101830938-88d68e00-3b35-11eb-95b9-12cfa4ecff90.png)
-
-    * [Bulb8](https://user-images.githubusercontent.com/61980577/101830945-8aa05180-3b35-11eb-9280-c93d65b69f32.png)
-
-    * [Bulb9](https://user-images.githubusercontent.com/61980577/101830954-90963280-3b35-11eb-94e4-4284f3aee490.png)
+    * [Bulb6](https://user-images.githubusercontent.com/61980577/101830954-90963280-3b35-11eb-94e4-4284f3aee490.png)
 
 
 ***

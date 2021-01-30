@@ -24,9 +24,8 @@ function startGame() {
 startButton.addEventListener('click', startGame);
 bulbContainer.addEventListener('click', event => {
     var bulb = event.target.dataset.number; 
-    console.log("bulbContainer - bulb: " + bulb)                                                           //user turn                                                                   level :1
-                                                                //  event: [object MouseEvent] dataset: [object: DOMStringMap]
-                                                                //  this bug might make the game not working//  // "user sequence not a number"
+    console.log("bulbContainer - bulb: " + bulb)                            
+                                                             
     if (bulb) manageTap(bulb);
 
 });
@@ -50,7 +49,7 @@ function nextTurn() {
     var timeoutInstance = setTimeout(() => {
         userTurn(level);
         clearTimeout(timeoutInstance);
-    }, level * 600 + 1000);
+    }, level * 1000 + 1000);
 }
 
 function chooseRandomBulb() {
@@ -66,7 +65,7 @@ function switchLight(nextSerie) {
             activateBulb(number);
             console.log("switchLight - activeBulb : " + number)
             clearTimeout(timeoutInstance);
-        }, (index + 1) * 700);
+        }, (index + 1) * 1000);
     });
 }
 
@@ -78,7 +77,7 @@ function activateBulb(number) {
         bulb.classList.remove('hidden');
         //bulb.classList.add('bulb-off');
         clearTimeout(timeoutInstance);
-    }, 1000);
+    }, 800);
 }
 
 function userTurn(level) {
@@ -117,7 +116,7 @@ function manageTap(bulb) {
         var timeoutInstance = setTimeout(() => {
             nextTurn();
             clearTimeout(timeoutInstance);
-        }, 1000);
+        }, 100);
         return;
 
     }
