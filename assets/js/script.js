@@ -8,6 +8,7 @@ const bulbContainer = document.getElementById("handleclick");
 const levelsCounter = document.querySelector(".counter");              
 const endGame = document.querySelector(".success");
 const gameLost = document.querySelector(".lost");
+const audioClick = document.getElementById("audio");
 
 //global variabiles called//
 
@@ -83,7 +84,7 @@ function activateBulb(number) {
 function userTurn(level) {
     bulbContainer.classList.remove('unclickable');
     console.log("userTurn - userlevel: " + level)
-    sequenceLevel.textContent = `Your turn: ${level} Tap`;
+    sequenceLevel.textContent = `Your turn:  Tap ${level}`;
 
 }
 
@@ -106,9 +107,9 @@ function manageTap(bulb) {
         if (userSequence.length === 10) {
             levelsCounter.classList, add('counter')
             sequenceLevel.classList.add('hidden');
-            endGame.classList.remove('hidden')
+            endGame.classList.remove('success')
             resetGame();
-            return
+            return;
         }
 
         userSequence = [];
@@ -135,3 +136,8 @@ function resetGame() {
     endGame.classList.add('hidden')
     bulbContainer.classList.add('unclickable');
 }
+
+function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }

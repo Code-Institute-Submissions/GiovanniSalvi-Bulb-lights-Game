@@ -75,12 +75,13 @@ h3 {
 	opacity: 1;
 }
 
-img {
+.bulb-on {
 	margin: 5px -14px;
 	padding: 10px;
 	height: 100%;
 	width: 100%;
-	position: absolute;
+    position: absolute;
+    outline: none;
 }
 
 /*.bulb-off {
