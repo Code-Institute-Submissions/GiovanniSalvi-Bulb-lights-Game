@@ -102,12 +102,12 @@ function manageTap(bulb) {
     if (userSequence[index] !== computerSequence[index]) {                 
         sequenceLevel.classList.add('hyde');
         levelsCounter.classList.add('counter');
-        var timeoutInstance = setTimeout(() => {
+    var timeoutInstance = setTimeout(() => {
         gameLost.classList.remove('hyde');
         lostSound.play(); 
         clearTimeout(timeoutInstance);
     }, 400);
-        var timeoutLostgame = setTimeout(() => {
+    var timeoutLostgame = setTimeout(() => {
         gameLost.classList.add('hyde');
         clearTimeout(timeoutLostgame);
     }, 5000);
@@ -119,28 +119,30 @@ function manageTap(bulb) {
         if (userSequence.length === 10) {
             levelsCounter.classList.add('counter')
             sequenceLevel.classList.add('hyde');
-            var timeoutSuccess = setTimeout(() => {
+        var timeoutSuccess = setTimeout(() => {
             endGame.classList.remove('hyde')
             successSound.play();
             clearTimeout(timeoutSuccess);
     }, 300);
         var timeoutendGame = setTimeout(() => {
-        endGame.classList.add('hyde')
-        clearTimeout(timeoutendGame);
+            endGame.classList.add('hyde')
+            clearTimeout(timeoutendGame);
     }, 5000);
         resetGame();
         return;
     }
 
         userSequence = [];
-        sequenceLevel.textContent = 'Well Done!';
-        var timeoutInstance = setTimeout(() => {
+        var timeoutSequence = setTimeout(() => {
+            sequenceLevel.textContent = 'Well Done!';
+            sequenceLevel.style.color = "yellow";
             waitSound.play();
-            clearTimeout(timeoutInstance);
-        }, 200);
-            nextTurn();
-            return;
-
+        }, 100)
+    
+        //clearTimeout(timeoutstopSequence);
+//}, 1000)  
+        nextTurn();
+        return;
     }
 
     sequenceLevel.textContent = `Your turn: Tap${
