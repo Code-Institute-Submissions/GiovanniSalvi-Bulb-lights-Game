@@ -31,7 +31,7 @@ h1 {
 	color: #ff4343;
 }
 
-.hidden {
+.hyde {
 	display: none!important;
 	text-align: center;
 	position: relative;
@@ -84,12 +84,6 @@ h3 {
     outline: none;
 }
 
-/*.bulb-off {
-    display: none!important;
-}
-	/*every bulb image is  overrided by another one*/
-
-
 .border {
 	border-radius: 5%;
 }
@@ -133,7 +127,32 @@ span {
 	margin-left: 25%;
 }
 
+.lost {
+    animation-name: blinking;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
 
+@keyframes  blinking{
+    from {color: rgb(17, 16, 16);}
+    to {color: rgb(255, 2, 2);}
+}
+.success {
+    animation-name: flashing;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+@keyframes  flashing{
+    from {color: rgb(17, 16, 16);}
+    to {color: rgb(37, 238, 81);}
+}
 /*responsive layout*/
 
 @media only screen and (max-width: 760px) {

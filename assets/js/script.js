@@ -9,15 +9,16 @@ const levelsCounter = document.querySelector(".counter");
 const endGame = document.querySelector(".success");
 const gameLost = document.querySelector(".lost");
 const audioClick = document.getElementById("audio");
+const lostSound = document.getElementById("lost");
 
-//global variabiles called//
+                     //global variabiles called//
 
 function startGame() {
      console.log("start game - game has started")
-    startButton.classList.add('hidden');
-    sequenceLevel.classList.remove('hidden');
+    startButton.classList.add('hyde');
+    sequenceLevel.classList.remove('hyde');
     levelsCounter.classList.remove('counter');                   
-    gameLost.classList.add('hidden');
+    gameLost.classList.add('hyde');
     nextTurn();
 }
 
@@ -36,7 +37,7 @@ function nextTurn() {
     level += 1;
     console.log("next turn - level: " + level)
     bulbContainer.classList.add('unclickable');
-    sequenceLevel.classList.remove('hidden');
+    sequenceLevel.classList.remove('hyde');
     levelsCounter.textContent = `Level ${level} of 10`;
 
 
@@ -72,10 +73,11 @@ function switchLight(nextSerie) {
 
 function activateBulb(number) {
     var bulb = document.querySelector(`[data-number='${number}']`);
-        bulb.classList.add('hidden')
+        audioClick.play()
+        bulb.classList.add('hyde')
     //bulb.classList.remove('bulb-off');//
     var timeoutInstance = setTimeout(() => {
-        bulb.classList.remove('hidden');
+        bulb.classList.remove('hyde');
         //bulb.classList.add('bulb-off');
         clearTimeout(timeoutInstance);
     }, 800);
@@ -95,22 +97,34 @@ function manageTap(bulb) {
     var remainingTaps = computerSequence.length - userSequence.length;
 
 
-    if (userSequence[index] !== computerSequence[index]) {                 
-        sequenceLevel.classList.add('hidden');
-        gameLost.classList.remove('hidden');                    
-        levelsCounter.classList.add('counter')
+    if (userSequence[index] !== computerSequence[index]) { 
+        lostSound.play();                
+        sequenceLevel.classList.add('hyde');
+        levelsCounter.classList.add('counter');
+        var timeoutInstance = setTimeout(() => {
+        gameLost.classList.remove('hyde');
+        clearTimeout(timeoutInstance);
+    }, 300);
+        var timeoutLostgame = setTimeout(() => {
+        gameLost.classList.add('hyde'); 
+        clearTimeout(timeoutLostgame);
+    }, 5000);
         resetGame();
         return;
     }
 
     if (userSequence.length === computerSequence.length) {
         if (userSequence.length === 10) {
-            levelsCounter.classList, add('counter')
-            sequenceLevel.classList.add('hidden');
-            endGame.classList.remove('success')
+            levelsCounter.classList.add('counter')
+            sequenceLevel.classList.add('hyde');
+            endGame.classList.remove('hyde')
+            var timeoutInstance = setTimeout(() => {
+            endGame.classList.add('hyde')
+            clearTimeout(timeoutInstance);
+    }, 6000);
             resetGame();
             return;
-        }
+    }
 
         userSequence = [];
         sequenceLevel.textContent = 'Well Done!';
@@ -131,13 +145,19 @@ function resetGame() {
     computerSequence = [];
     userSequence = [];
     level = 0;
-    startButton.classList.remove('hidden');
+    startButton.classList.remove('hyde');
     levelsCounter.classList.add('counter');
-    endGame.classList.add('hidden')
     bulbContainer.classList.add('unclickable');
+    endGame.classList.add('hyde');
+        
 }
 
 function play() {
         var audio = document.getElementById("audio");
         audio.play();
       }
+
+function audio() {
+        var sound = document.getElementById("lost");
+        sound.audio();
+}
