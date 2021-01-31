@@ -112,7 +112,7 @@ I decided to not use jQuery in order to test my abilities with javascript.
 
   [Freeformatter.com](https://www.freeformatter.com/)
   
- * The Javascript code was formatted using:
+* The Javascript code was formatted using:
  
   [Online JavaScript Beautifier](https://beautifier.io/)
 
