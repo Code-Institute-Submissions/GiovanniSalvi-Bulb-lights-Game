@@ -10,6 +10,8 @@ const endGame = document.querySelector(".success");
 const gameLost = document.querySelector(".lost");
 const audioClick = document.getElementById("audio");
 const lostSound = document.getElementById("lost");
+const waitSound = document.getElementById("waitmode");
+const successSound = document.getElementById("success");
 
                      //global variabiles called//
 
@@ -51,7 +53,7 @@ function nextTurn() {
     var timeoutInstance = setTimeout(() => {
         userTurn(level);
         clearTimeout(timeoutInstance);
-    }, level * 1000 + 1000);
+    }, level * 800 + 800);
 }
 
 function chooseRandomBulb() {
@@ -67,7 +69,7 @@ function switchLight(nextSerie) {
             activateBulb(number);
             console.log("switchLight - activeBulb : " + number)
             clearTimeout(timeoutInstance);
-        }, (index + 1) * 1000);
+        }, (index + 1) * 800);
     });
 }
 
@@ -97,16 +99,16 @@ function manageTap(bulb) {
     var remainingTaps = computerSequence.length - userSequence.length;
 
 
-    if (userSequence[index] !== computerSequence[index]) { 
-        lostSound.play();                
+    if (userSequence[index] !== computerSequence[index]) {                 
         sequenceLevel.classList.add('hyde');
         levelsCounter.classList.add('counter');
         var timeoutInstance = setTimeout(() => {
         gameLost.classList.remove('hyde');
+        lostSound.play(); 
         clearTimeout(timeoutInstance);
-    }, 300);
+    }, 400);
         var timeoutLostgame = setTimeout(() => {
-        gameLost.classList.add('hyde'); 
+        gameLost.classList.add('hyde');
         clearTimeout(timeoutLostgame);
     }, 5000);
         resetGame();
@@ -117,22 +119,27 @@ function manageTap(bulb) {
         if (userSequence.length === 10) {
             levelsCounter.classList.add('counter')
             sequenceLevel.classList.add('hyde');
+            var timeoutSuccess = setTimeout(() => {
             endGame.classList.remove('hyde')
-            var timeoutInstance = setTimeout(() => {
-            endGame.classList.add('hyde')
-            clearTimeout(timeoutInstance);
-    }, 6000);
-            resetGame();
-            return;
+            successSound.play();
+            clearTimeout(timeoutSuccess);
+    }, 300);
+        var timeoutendGame = setTimeout(() => {
+        endGame.classList.add('hyde')
+        clearTimeout(timeoutendGame);
+    }, 5000);
+        resetGame();
+        return;
     }
 
         userSequence = [];
         sequenceLevel.textContent = 'Well Done!';
         var timeoutInstance = setTimeout(() => {
-            nextTurn();
+            waitSound.play();
             clearTimeout(timeoutInstance);
-        }, 100);
-        return;
+        }, 200);
+            nextTurn();
+            return;
 
     }
 
@@ -145,10 +152,13 @@ function resetGame() {
     computerSequence = [];
     userSequence = [];
     level = 0;
-    startButton.classList.remove('hyde');
+    var timeoutLostgame = setTimeout(() => {
+        startButton.classList.remove('hyde');
+        clearTimeout(timeoutLostgame);
+    }, 5000);
     levelsCounter.classList.add('counter');
     bulbContainer.classList.add('unclickable');
-    endGame.classList.add('hyde');
+    
         
 }
 
@@ -157,7 +167,3 @@ function play() {
         audio.play();
       }
 
-function audio() {
-        var sound = document.getElementById("lost");
-        sound.audio();
-}
