@@ -38,7 +38,6 @@ h1 {
 	font-size: 25px;
 	top: 5px;
 	letter-spacing: 0.2em;
-	
 }
 
 .counter {
@@ -80,8 +79,8 @@ h3 {
 	padding: 10px;
 	height: 100%;
 	width: 100%;
-    position: absolute;
-    outline: none;
+	position: absolute;
+	outline: none;
 }
 
 .border {
@@ -127,34 +126,43 @@ span {
 }
 
 .lost {
-    animation-name: blinking;
-    animation-duration: 0.8s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-play-state: running;
+	animation-name: blinking;
+	animation-duration: 0.8s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-play-state: running;
 }
 
-@keyframes  blinking{
-    from {color: rgb(17, 16, 16);}
-    to {color: rgb(255, 2, 2);}
+@keyframes blinking {
+	from {
+		color: rgb(17, 16, 16);
+	}
+	to {
+		color: rgb(255, 2, 2);
+	}
 }
+
 .success {
-    animation-name: flashing;
-    animation-duration: 0.8s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-play-state: running;
+	animation-name: flashing;
+	animation-duration: 0.8s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-play-state: running;
 }
 
-@keyframes  flashing{
-    from {color: rgb(17, 16, 16);}
-    to {color: rgb(37, 238, 81);}
+@keyframes flashing {
+	from {
+		color: rgb(17, 16, 16);
+	}
+	to {
+		color: rgb(37, 238, 81);
+	}
 }
 
-       /*responsive layout*/
 
+/*responsive layout*/
 
 @media only screen and (max-width: 760px) {
 	.waitMode {
@@ -185,8 +193,8 @@ span {
 @media only screen and (max-width: 520px) {
 	#startButton {
 		position: relative;
-        left: 20%;
-        font-size: 35px;
+		left: 20%;
+		font-size: 35px;
 	}
 }
 
@@ -213,12 +221,11 @@ span {
 	}
 }
 
-
 @media only screen and (min-width: 576px) {
 	#startButton {
 		position: relative;
-        bottom: 80px;
-        left:15px;
+		bottom: 80px;
+		left: 15px;
 	}
 }
 
@@ -234,30 +241,33 @@ span {
 		position: unset;
 	}
 }
+
 @media only screen and (max-width: 576px) {
 	.lost {
-        margin-left: 5%;
-        letter-spacing: unset;
-        min-width: unset;
+		margin-left: 5%;
+		letter-spacing: unset;
+		min-width: unset;
 	}
 }
+
 @media only screen and (max-width: 576px) {
 	.waitmode {
-        margin-left: 5%;
-        letter-spacing: unset;
-        min-width: unset;
+		margin-left: 5%;
+		letter-spacing: unset;
+		min-width: unset;
 	}
 }
 
 @media only screen and (max-width: 576px) {
 	.success {
-        margin-left: 5%;
-        letter-spacing: unset;
-        min-width: unset;
+		margin-left: 5%;
+		letter-spacing: unset;
+		min-width: unset;
 	}
 }
+
 @media only screen and (max-width: 576px) {
 	.level-info {
-		position:unset
+		position: unset
 	}
 }

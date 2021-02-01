@@ -10,12 +10,12 @@ I realized this project as part of the Interactive Front-end development module 
 
 ### Project Story:
 
-For this project I decided to do a  game inspired by Simon game. It is a memory game where you have to follow the sequence and copy the sequence correctly to move on to the next level after completing 10 levels you have won otherwise you have lost.
+For this project I decided to do a  game inspired by Simon game. It is a memory game where you have to follow the sequence and copy the sequence correctly to move on to the next level after completing 15 levels you have won otherwise you have lost.
 Firstly I realized  the HTML for the game and using bootstrap libraries to make page responsive then after I finished to style it with css.
 Once I completed the static part of the game I create the script using javascript, first step was create three variables 'LET' to assign the empty arrays human sequence, A.I sequence and  starting point level[0].
 Then I create an event listener to the bulbContainer const. which  element that  clicked is accessed and stored in the bulb variable.
 My goal was also add a specific audio to each lightbulbs and create a reset button but i gave up to focus on making the game functional.
-I decided to not use jQuery in order to test my abilities with javascript.
+I decided to not rely much on jQuery in order to test my abilities with javascript.
 
 ---
 
@@ -25,10 +25,9 @@ I decided to not use jQuery in order to test my abilities with javascript.
 
 2. In this project the lights flash and the user has to copy the sequence and click the correct bulb. 
 
-3. Users in order to win are supposed to reach level 10.
+3. Users in order to win are supposed to reach level 15.
 
 4. The game gets harder the longer you play!
-
 
 
 ---
@@ -71,8 +70,6 @@ I decided to not use jQuery in order to test my abilities with javascript.
 
 * Feature1:A feature to implement is create a 'reset' buttons to let the users have control of the game.
 
-* Feature2:A feature to implement is  add background music to the game, add a new sound object, and start playing when users start the game.
-
 ---
 # Technologies used
 
@@ -93,7 +90,21 @@ I decided to not use jQuery in order to test my abilities with javascript.
 ***
 # Testing
 
-  ### The project has been validated using:
+### Steps to follow to play the game:
+
+* The homepage includes the game's name "Lightbulb Game" at the top, six boxes are in the middle of the page, each box contains a lightbulb with different colors and shape and a Start blue button just below the boxes.
+
+* As a user pushing Start button, it makes the game start, a text message "wait for the computer" appears at the bottom left. When the computer sequence initiates , one out of six lightbulbs randomly flashes(disappear for 0.5 seconds),after that a text message "your turn: tap 1" replace the previuos message.
+
+* As a user I am supposed to tap the same bulb as the computer in order to move forward with the game.
+    * If user taps the same bulb as the computer, a text message "well done" appears for few seconds then it will be replaced by a "wait for the computer" message when game steps up to the second level.A new computer sequence starts now and it  increments by one so will flash two bulbs and so on.
+    * Else user taps wrong bulb,a red blinking text message "GAME OVER! Tap wrong light" appears at the bottom left.After 5 seconds this message  is going to disappear,the game get resetted and Start button will show up again below the boxes.
+
+* As a user if I will be able to tap right bulbs matching computer sequence for 15 times consecutive, passing all 15 levels, A green blinking text message "Congrats,YOU WON!" will appear at the bottom left.After 5 seconds this message is going to disappear,the game get resetted and Start button will show up again below the  boxes.
+
+---
+
+### The project has been validated using:
 
 * [validator.w3.org](https://validator.w3.org/nu/?doc=https%3A%2F%2Fgiovannisalvi.github.io%2FBulb-lights-Game%2F) for HTML language.
 
