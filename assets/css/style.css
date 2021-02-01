@@ -44,6 +44,17 @@ h1 {
 	display: none!important;
 	/*hide levels counter when game is not active*/
 }
+.turnpassed{
+    display: none;
+}
+
+.well_done{
+    color:gold;
+    font-family: math;
+    font-size: 20px;
+    font-weight: bold;
+
+}
 
 h3 {
 	font-size: 25px;

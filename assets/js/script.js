@@ -8,6 +8,7 @@ const bulbContainer = document.getElementById("handleclick");
 const levelsCounter = document.querySelector(".counter");
 const endGame = document.querySelector(".success");
 const gameLost = document.querySelector(".lost");
+const turnPassed = document.querySelector('.turnpassed')
 const audioClick = document.getElementById("audio");
 const lostSound = document.getElementById("lost");
 const waitSound = document.getElementById("waitmode");
@@ -81,7 +82,7 @@ function activateBulb(number) {
 
 function userTurn(level) {
     bulbContainer.classList.remove('unclickable');
-    sequenceLevel.textContent = `Your turn:  Tap ${level}`;
+    sequenceLevel.textContent = `Your turn: ${level} Tap` + ((level>1)?'s': "");
 
 }
 
@@ -125,23 +126,20 @@ function manageTap(bulb) {
 
         userSequence = [];
         var timeoutSequence = setTimeout(() => {
-            sequenceLevel.textContent = 'Well Done!';
+            turnPassed.classList.remove('turnpassed');
+            turnPassed.textContent = "Well Done!";
             waitSound.play();
         }, 50)
-        clearTimeout((timeoutSequence) =>
-            700);
-        $(document).ready(function() {
-            $().css({
-                "color": "yellow",
-                "font-size": "100%"
-            });
-        });
+        var timeoutEndsequence = setTimeout(() => {
+            turnPassed.classList.add('turnpassed')
+            clearTimeout(timeoutEndsequence) 
+        }, 700);
         nextTurn();
         return;
     }
 
     sequenceLevel.textContent = `Your turn: Tap${
-remainingTaps
+remainingTaps 
 }`;
 }
 
