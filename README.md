@@ -92,15 +92,15 @@ I decided to not rely much on jQuery in order to test my abilities with javascri
 
 ### Steps to follow to play the game:
 
-* The homepage includes the game's name "Lightbulb Game" at the top, six boxes are in the middle of the page, each box contains a lightbulb with different colors and shape and a Start blue button just below the boxes.
+* The homepage includes the game's name "Lightbulb Game" at the top, six boxes are in the middle of the page, each box contains a lightbulb with different colors and shape and finally a Start blue button just below the boxes.
 
-* As a user pushing Start button, it makes the game start, a text message "wait for the computer" appears at the bottom left. When the computer sequence initiates , one out of six lightbulbs randomly flashes(disappear for 0.5 seconds),after that a text message "your turn: tap 1" replace the previuos message.
+* As a user pushing Start button, it makes the game to start, a text message "wait for the computer" appears at the bottom left. When the computer sequence initiates , one out of six lightbulbs randomly flashes(disappear for 0.5 seconds),after that a text message "your turn: tap 1" replace the previuos message.
 
-* As a user I am supposed to tap the same bulb as the computer in order to move forward with the game.
+* As a user my goal is to tap the same bulb as the computer in order to move forward with the game.
     * If user taps the same bulb as the computer, a text message "well done" appears for few seconds then it will be replaced by a "wait for the computer" message when game steps up to the second level.A new computer sequence starts now and it  increments by one so will flash two bulbs and so on.
     * Else user taps wrong bulb,a red blinking text message "GAME OVER! Tap wrong light" appears at the bottom left.After 5 seconds this message  is going to disappear,the game get resetted and Start button will show up again below the boxes.
 
-* As a user if I will be able to tap right bulbs matching computer sequence for 15 times consecutive, passing all 15 levels, A green blinking text message "Congrats,YOU WON!" will appear at the bottom left.After 5 seconds this message is going to disappear,the game get resetted and Start button will show up again below the  boxes.
+* As a user if I will be able to tap right bulbs matching computer sequence for 15 times consecutive, passing all 15 levels, a green blinking text message "Congrats,YOU WON!" will appear at the bottom left.After 5 seconds this message is going to disappear,the game get resetted and Start button will show up again below the boxes ready for a new match.
 
 ---
 
