@@ -12,10 +12,11 @@ I realized this project as part of the Interactive Front-end development module 
 
 For this project I decided to do a  game inspired by Simon game. It is a memory game where you have to follow the sequence and copy the sequence correctly to move on to the next level after completing 15 levels you have won otherwise you have lost.
 Firstly I realized  the HTML for the game and using bootstrap libraries to make page responsive then after I finished to style it with css.
-Once I completed the static part of the game I create the script using javascript, first step was create three variables 'LET' to assign the empty arrays human sequence, A.I sequence and  starting point level[0].
-Then I create an event listener to the bulbContainer const. which  element that  clicked is accessed and stored in the bulb variable.
-My goal was also add a specific audio to each lightbulbs and create a reset button but i gave up to focus on making the game functional.
-I decided to not rely much on jQuery in order to test my abilities with javascript.
+Once I completed the static part of the game I create the script using javascript, first step I create three variables 'LET' to assign the empty arrays human sequence, A.I sequence and  starting point level[0].
+Then I used an event listener to the bulbContainer const. which  element that  clicked is accessed and stored in the bulb variable.
+I also add a specific audio to each lightbulbs and text messages.
+My goal was also to create a reset button but i gave up to focus on making the game functional.
+I decided to not rely on jQuery in order to test my abilities with Javascript.
 
 ---
 
