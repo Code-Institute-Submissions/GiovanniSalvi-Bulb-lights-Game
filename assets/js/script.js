@@ -16,19 +16,18 @@ const successSound = document.getElementById("success");
                      //global variabiles called//
 
 function startGame() {
-     console.log("start game - game has started")
     startButton.classList.add('hyde');
     sequenceLevel.classList.remove('hyde');
     levelsCounter.classList.remove('counter');                   
     gameLost.classList.add('hyde');
+    sequenceLevel.style.color = "black";
     nextTurn();
 }
 
 
 startButton.addEventListener('click', startGame);
 bulbContainer.addEventListener('click', event => {
-    var bulb = event.target.dataset.number; 
-    console.log("bulbContainer - bulb: " + bulb)                            
+    var bulb = event.target.dataset.number;                           
                                                              
     if (bulb) manageTap(bulb);
 
@@ -37,29 +36,27 @@ bulbContainer.addEventListener('click', event => {
 
 function nextTurn() {
     level += 1;
-    console.log("next turn - level: " + level)
     bulbContainer.classList.add('unclickable');
-    sequenceLevel.classList.remove('hyde');
+    var timeoutWait = setTimeout(() => {
+        sequenceLevel.textContent = "Wait for the Computer. ."
+    }, 500);
     levelsCounter.textContent = `Level ${level} of 10`;
 
 
     var nextSerie = [...computerSequence];
     nextSerie.push(chooseRandomBulb());
-    console.log("next turn - nextSerie is : " + nextSerie)
     switchLight(nextSerie);
 
     computerSequence = [...nextSerie];
-    console.log("next turn - computerSequence is: " + computerSequence)
     var timeoutInstance = setTimeout(() => {
         userTurn(level);
         clearTimeout(timeoutInstance);
-    }, level * 800 + 800);
+    }, level * 500 + 1000);
 }
 
 function chooseRandomBulb() {
     var bulbs = ['one', 'two', 'three', 'four', 'five', 'six'];
     var random = bulbs[Math.floor(Math.random() * bulbs.length)];
-    console.log("chooseRandomBulb - random value : " + random)
     return random;
 }
 
@@ -67,9 +64,8 @@ function switchLight(nextSerie) {
     nextSerie.forEach((number, index) => {
         var timeoutInstance = setTimeout(() => {
             activateBulb(number);
-            console.log("switchLight - activeBulb : " + number)
             clearTimeout(timeoutInstance);
-        }, (index + 1) * 800);
+        }, (index + 1) * 500);
     });
 }
 
@@ -77,25 +73,20 @@ function activateBulb(number) {
     var bulb = document.querySelector(`[data-number='${number}']`);
         audioClick.play()
         bulb.classList.add('hyde')
-    //bulb.classList.remove('bulb-off');//
     var timeoutInstance = setTimeout(() => {
         bulb.classList.remove('hyde');
-        //bulb.classList.add('bulb-off');
         clearTimeout(timeoutInstance);
-    }, 800);
+    }, 600);
 }
 
 function userTurn(level) {
     bulbContainer.classList.remove('unclickable');
-    console.log("userTurn - userlevel: " + level)
     sequenceLevel.textContent = `Your turn:  Tap ${level}`;
 
 }
 
 function manageTap(bulb) {
-    console.log("managetap - bulb is equal to: " + bulb)
     var index = userSequence.push(bulb) - 1;
-    console.log("managetap - index is : " + index)
     var remainingTaps = computerSequence.length - userSequence.length;
 
 
@@ -106,7 +97,7 @@ function manageTap(bulb) {
         gameLost.classList.remove('hyde');
         lostSound.play(); 
         clearTimeout(timeoutInstance);
-    }, 400);
+    }, 300);
     var timeoutLostgame = setTimeout(() => {
         gameLost.classList.add('hyde');
         clearTimeout(timeoutLostgame);
@@ -135,16 +126,18 @@ function manageTap(bulb) {
         userSequence = [];
         var timeoutSequence = setTimeout(() => {
             sequenceLevel.textContent = 'Well Done!';
-            sequenceLevel.style.color = "yellow";
             waitSound.play();
-        }, 100)
-    
-        //clearTimeout(timeoutstopSequence);
-//}, 1000)  
+        }, 50)
+        clearTimeout((timeoutSequence) =>
+        700);
+        $(document).ready(function(){
+            $().css({"color": "yellow", "font-size": "100%"
+            });
+        });
         nextTurn();
         return;
     }
-
+    
     sequenceLevel.textContent = `Your turn: Tap${
 remainingTaps
 }`;
@@ -160,12 +153,13 @@ function resetGame() {
     }, 5000);
     levelsCounter.classList.add('counter');
     bulbContainer.classList.add('unclickable');
-    
+    sequenceLevel.textContent = ""
         
 }
 
-function play() {
+function play(number) {
         var audio = document.getElementById("audio");
         audio.play();
+        activateBulb(number);
       }
 
