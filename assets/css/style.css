@@ -195,12 +195,6 @@ span {
 	}
 }
 
-@media only screen and (max-width: 576px) {
-	#start_button {
-		margin-top: 40px;
-	}
-}
-
 @media only screen and (max-width: 520px) {
 	#startButton {
 		position: relative;
@@ -215,13 +209,6 @@ span {
 		position: relative;
 		height: 160px;
 		left: 10px;
-	}
-}
-
-@media only screen and (max-width: 576px) {
-	.container {
-		margin-bottom: auto;
-		padding: 20px;
 	}
 }
 
@@ -241,44 +228,39 @@ span {
 }
 
 @media only screen and (max-width: 576px) {
-	.bulb-on {
-		height: 35%;
-		width: 40%;
-	}
-}
-
-@media only screen and (max-width: 576px) {
-	.h2 {
-		position: unset;
-	}
-}
-
-@media only screen and (max-width: 576px) {
-	.lost {
-		margin-left: 5%;
-		letter-spacing: unset;
-		min-width: unset;
-	}
-}
-
-@media only screen and (max-width: 576px) {
-	.waitmode {
-		margin-left: 5%;
-		letter-spacing: unset;
-		min-width: unset;
-	}
-}
-
-@media only screen and (max-width: 576px) {
 	.success {
 		margin-left: 5%;
 		letter-spacing: unset;
+        min-width: unset;
+    }
+    .level-info {
+		position: unset
+    }
+    .waitmode {
+		margin-left: 5%;
+		letter-spacing: unset;
 		min-width: unset;
-	}
+    }
+    .lost {
+		margin-left: 5%;
+		letter-spacing: unset;
+		min-width: unset;
+    }
+    .h2 {
+		position: unset;
+    }
+    .h2 {
+		position: unset;
+    }
+    .container {
+		margin-bottom: auto;
+		padding: 20px;
+    }
+    #start_button {
+		margin-top: 40px;
+    }
+    
 }
 
-@media only screen and (max-width: 576px) {
-	.level-info {
-		position: unset
-	}
-}
+
+	

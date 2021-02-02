@@ -66,7 +66,7 @@ function switchLight(nextSerie) {
         var timeoutInstance = setTimeout(() => {
             activateBulb(number);
             clearTimeout(timeoutInstance);
-        }, (index + 1) * 500);
+        }, (index + 1) * 600);
     });
 }
 
@@ -108,7 +108,7 @@ function manageTap(bulb) {
     }
 
     if (userSequence.length === computerSequence.length) {
-        if (userSequence.length === 15) {
+        if (userSequence.length === 2) {
             levelsCounter.classList.add('counter')
             sequenceLevel.classList.add('hyde');
             var timeoutSuccess = setTimeout(() => {
