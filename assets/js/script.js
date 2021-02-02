@@ -52,7 +52,7 @@ function nextTurn() {
     var timeoutInstance = setTimeout(() => {
         userTurn(level);
         clearTimeout(timeoutInstance);
-    }, level * 500 + 800);
+    }, level * 500 + 1000);
 }
 
 function chooseRandomBulb() {
