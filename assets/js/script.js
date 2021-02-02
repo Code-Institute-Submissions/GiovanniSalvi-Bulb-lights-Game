@@ -108,7 +108,7 @@ function manageTap(bulb) {
     }
 
     if (userSequence.length === computerSequence.length) {
-        if (userSequence.length === 2) {
+        if (userSequence.length === 10) {
             levelsCounter.classList.add('counter')
             sequenceLevel.classList.add('hyde');
             var timeoutSuccess = setTimeout(() => {
